@@ -5,8 +5,16 @@
     <title></title>
   </head>
   <body>
+    <form>
+      <input type='text' name='guess' />
+      <input type='submit' value='Guess!' />
+    </form>
+    <h3><%= message %></h3>
     <p>
       The SECRET NUMBER is <%= num %>
     </p>
+    <form method="get" action="/">
+      <input type="submit" value="Reset!" />
+    </form>
   </body>
 </html>
